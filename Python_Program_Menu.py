@@ -1,7 +1,7 @@
 import platform
 import psutil
 
-def first_program():
+def check_computer_specs():
     print("\nChecking computer specifications...\n")
     
     # Basic System Information
@@ -33,9 +33,9 @@ def first_program():
     input("Press Enter to return to the main menu.\n")
 
 
-def second_program():
-    print("\nYou are now in the Second Program.")
-    # Example functionality: Check if a number is even or odd
+def check_even_odd():
+    print("\nYou are now in the Even/Odd Checker.")
+    # Functionality: Check if a number is even or odd
     num = int(input("Enter a number to check if it is even or odd: "))
     if num % 2 == 0:
         print(f"{num} is even.\n")
@@ -46,7 +46,7 @@ def second_program():
 def show_menu():
     print("Menu:")
     print("1. Check Computer Specifications")
-    print("2. Second Program")
+    print("2. Even/Odd Checker")
     print("3. Exit")
 
 
@@ -56,9 +56,9 @@ def main():
         choice = input("Please select an option (1-3): ")
 
         if choice == '1':
-            first_program()
+            check_computer_specs()
         elif choice == '2':
-            second_program()
+            check_even_odd()
         elif choice == '3':
             print("Exiting the program. Goodbye!")
             break
